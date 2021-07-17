@@ -1,0 +1,21 @@
+<div class="container">
+    {{#if posts.length}}
+    <section>
+        <h2>Your Posts</h2>
+        <ol>
+            {{#each posts as |post|}}
+            <li>
+            {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+            </li>
+            {{/each}}
+        </ol>
+    </section>
+    {{/if}}
+
+    <div class="row">
+        <div class="col text-center">
+            <button id="newPostBtn" type='button' class="btn-success">Create Post</button>
+        </div>
+    </div>
+</div> 
