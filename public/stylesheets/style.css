@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    color: darkblue;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+#header {
+    background-color: darkblue;
+    color: white;
+}
+
+li, li a {
+    background-color: midnightblue;
+    color: lightblue;
+}
+
+li:nth-child(odd), li:nth-child(odd) a {
+    background-color: lightblue;
+    color: midnightblue;
+}
+ 

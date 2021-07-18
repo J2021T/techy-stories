@@ -12,22 +12,22 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
   secret: 'Pinkpandapaws',
   cookie: {
-      expiration: 60 * 60 * 1000
+      expires: 30 * 60 * 1000
   },
-  resave: false,
+  resave: true,
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize
   })
 };
 
-// app.use(session(sess));
+app.use(session(sess));
 
-// const helpers = require('./utils/helpers');
+const helpers = require('./utils/helpers');
 
-// const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({ helpers });
 
-const hbs = exphbs.create({});
+// const hbs = exphbs.create({});
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');

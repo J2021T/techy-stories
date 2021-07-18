@@ -10,25 +10,26 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>
+  <div class="container">
+    <header id="header" class="row">
+      <h1 class="col-6 col-md-9">
         <a href="/">Techy Stories -- Tech Blog</a>
       </h1>
-      <nav>
-        <a href="/">homepage</a>
-        <a href="/dashboard">dashboard</a>
+      <nav class="col-6 col-md-3">
         {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/">homepage</a>
+        <a href="/dashboard">dashboard</a>        
+        <button id="logout" class="btn-danger">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/">homepage</a>
+        <a href="/login" class="btn-success">login</a>
         {{/if}}
       </nav>
     </header>
     <main>
       {{{ body }}}
     </main>
-    <footer>
+    <footer class="text-center">
       Thanks for visiting!
     </footer>
   </div>
