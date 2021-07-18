@@ -1,6 +1,6 @@
 
   # techy_stories
-  * ![undefined License](https://img.shields.io/badge/license-undefined-blue)
+  * ![MIT License](https://img.shields.io/badge/license-MIT-blue)
 
   ## Description
   Techy Stories is a blog for people to come and blog about any kind of tech.  Users can share their opinions through posts and comments on other users' posts. Created through Node utilizing express, MySQL, and Heroku to deploy.
@@ -46,8 +46,8 @@
   
   
   ## License
-  This project is covered under the [undefined](../assets/license-files/undefined.txt) license.
+  This project is covered under the [MIT](../assets/license-files/MIT.txt) license.
 
- ![undefined License](https://img.shields.io/badge/license-undefined-blue)
+ ![MIT](https://img.shields.io/badge/license-MIT-blue)
   
   
