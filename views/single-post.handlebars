@@ -1,4 +1,10 @@
-{{> post-info post}}
+<article class="post">
+  <div class="title"><a class="postLink" href="/post/{{post.id}}">{{post.title}}</a></div>
+  <div class="content">{{post.content}}</div>
+  <div class="meta">
+    By {{post.user.username}} on {{format_date post.created_at}}
+  </div>
+</article>
 
 {{#if loggedIn}}
 <form class="comment-form">

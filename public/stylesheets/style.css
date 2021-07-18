@@ -25,4 +25,7 @@ li:nth-child(odd), li:nth-child(odd) a {
     background-color: lightblue;
     color: midnightblue;
 }
- 
+
+.postLink {
+    color: darkblue;
+}
